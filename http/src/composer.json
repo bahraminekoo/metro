@@ -1,0 +1,30 @@
+{
+  "name": "metro/http",
+  "description": "call external api",
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "Hossein Bahrami Nekoo",
+      "email": "ho.bahram@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "classmap": [
+      "src/migrations",
+      "src/Models",
+      "src/Helper"
+    ],
+    "psr-4": {
+      "Metro\\Http\\": "packages/metro/http/src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Metro\\Http\\HttpServiceProvider"
+      ]
+    }
+  }
+}
